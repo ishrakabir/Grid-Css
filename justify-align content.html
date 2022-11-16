@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
+    <title>Grid-Justify & Align content</title>
+    <style>
+        .container {
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(5,150px);
+            /* grid-template-columns: repeat(auto-fit,minmax(350px,1fr)); */
+            grid-template-rows: repeat(2,50px);
+            justify-content: space-around;
+            /* justify-content: center; */
+            align-content: center;
+            /* align-content: space-around; */
+        }
+    </style>
+</head>
+<div class="container container2">
+    <div class="content1">cell-1</div>
+    <div class="content2">cell-2</div>
+    <div class="content3">cell-3</div>
+    <div class="content4">cell-4</div>
+    <div class="content5">cell-5</div>
+    <div class="content6">cell-6</div>
+    <div class="content6">cell-6</div>
+    <div class="content6">cell-6</div>
+    <div class="content6">cell-6</div>
+    <div class="content6">cell-6</div>
+   
+</div>
+</div>
+</body>
+
+</html>

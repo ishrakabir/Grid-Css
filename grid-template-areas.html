@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
+    <title>Grid-Template-areas</title>
+    <style>
+        .container{
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: repeat(4,1fr);
+            grid-template-areas: 
+            "a b c c c c c c c c c c"
+            "d b c c c c c c c c c c"
+            "d b e e e e e e e e e e"
+            "d b f f f f f f f f f f";
+        }
+        .content1{
+           grid-area: a;
+        }
+        .content2{
+            grid-area: b;   
+        }
+        .content3{
+          grid-area: c;
+        }
+        .content4{
+         grid-area: d;
+        }
+        .content5{
+          grid-area: e;
+        }
+        .content6{
+            grid-area: f;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content1">cell-1</div>
+        <div class="content2">cell-2</div>
+        <div class="content3">cell-3</div>
+        <div class="content4">cell-4</div>
+        <div class="content5">cell-5</div>
+        <div class="content6">cell-6</div>
+    </div>
+</body>
+</html>
